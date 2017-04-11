@@ -33,6 +33,7 @@ public class DatesPrinter {
             return true;
          }
       }));
+      es.shutdown();
 
       // collect results
       return threads.stream().map(DTPrinterThread::getResult).collect(Collectors.toList());
