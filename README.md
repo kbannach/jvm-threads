@@ -8,4 +8,4 @@ mvn test
 ### Results
 Using one SimpleDateFormat object concurently results in undefined behaviour (sometimes parsing a date results in `"null"`, sometimes it results in a string representing a date not in range of 100 days, and sometimes it doubles existing strings).
 ### How to solve it?
-This problem may be solved easly by using `LocalDateFormat` class to obtain one object instance per thread.
+This problem may be solved easliy by using `LocalDateFormat` class to obtain one object instance per thread.
